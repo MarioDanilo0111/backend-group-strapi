@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="getDataFromStrapi();">Fetch Pokemons</button>
+    </div>
+
+    <div id="pokemonFetched"></div>
+
+    <div>
+        <label for="user">Användarnamn:</label>
+        <input type="text" name="user" id="user" >
+        <div id="userError" class="errorInfo"></div>
+
+        <label for="pass">Lösenord:</label>
+        <input type="password" name="pass" id="pass" >
+        <div id="passwordError" class="errorInfo"></div>
+    </div>
+
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <div id="pokeNameError" class="errorInfo"></div>
+    </div>
+    <div>
+        <label for="details">Details:</label>
+        <input type="text" name="details" id="details">
+    </div>
+    <div>
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price">
+    </div>
+    <div>
+        <label for="qty">Qty:</label>
+        <input type="number" name="qty" id="qty">
+    </div>
+
+    <div>
+        <button onclick="postData()">Skicka iväg ny data</button>
+    </div>
+
+</body>
+<script src="valideringDeleteUpdate.js"></script>
+</html>

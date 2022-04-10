@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Strapi API</title>
+</head>
+
+<body>
+    <button id="fetched" onclick="getDataFromStrapi()">Klick for products</button>
+    <div>
+        <label for="user">Användarnamn</label>
+        <input type="text" name="user" id="user">
+        <label for="pass">Password</label>
+        <input type="text" name="pass" id="pass">
+    </div>
+    <div>
+        <label for="title">Product title</label>
+        <input type="text" name="title" id="title" onchange="titleValidate(this)">
+        <div id="titleError" class="errorInfo"></div>
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description">
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price">
+    </div>
+    <div>
+        <label for="qty">Qty</label>
+        <input type="number" name="qty" id="qty">
+    </div>
+    <div>
+        <button onclick="getToken()">Skicka iväg ny data</button>
+    </div>
+    <br><br>
+    <section id="output">
+
+    </section>
+
+
+    </div>
+</body>
+<script src="correct.js"></script>
+
+
+</html>
